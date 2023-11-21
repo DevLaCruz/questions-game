@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Responde Rápido</title>
+</head>
+
+
+<body onload="startCountDown()" class="container">
+    <br>
+    <h1>Juego de Preguntas, Mide tu Velocidad</h1>
+    <hr>
+    <h2>Responde a las preguntas lo mas rapido que puedas <span id="countDown"></span></h2>
+
+    <div class="" id="questionsContainer"></div>
+    <div class="alert alert-info" id="scoreMessage" style="display: none;"></div>
+    <button id="finishButton" class="btn btn-primary" onclick="finish()" style="margin-bottom: 50px;">Terminé!</button>
+    <button id="tryAgainButton" class="btn btn-secondary" onclick="tryAgain()" style="margin-bottom: 50px;">Volver a
+        Intentar</button>
+
+
+
+    <audio id="audioFinal">
+        <source src="gameover.mp3" type="audio/mpeg">
+        Sonido no habilitado
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
